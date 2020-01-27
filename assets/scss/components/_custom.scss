@@ -1,0 +1,93 @@
+// Body setup
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+// Backgrounds
+
+.bg-gradient-animation{
+  background: linear-gradient(270deg, #f55711, #fa9913, #f96724, #f55711);
+  background-size: 800% 800%;
+
+  -webkit-animation: bg-gradient-animation 30s ease infinite;
+  -moz-animation: bg-gradient-animation 30s ease infinite;
+  -o-animation: bg-gradient-animation 30s ease infinite;
+  animation: bg-gradient-animation 30s ease infinite;
+}
+
+@-webkit-keyframes bg-gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bg-gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bg-gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bg-gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+// Contents
+
+.wrapper-content {
+    background: $almost-pink;
+    border-radius: 30px 0 0 30px;
+    height: calc(100vh - 120px);
+    padding: 60px 0;
+    box-shadow: 0px 12px 60px 0 rgba(216, 50, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.img-wrapper {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0px 15px 30px 0 rgba(216, 50, 0, 0.5);
+    background: $white;
+}
+
+.img-wrapper > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.profile-picture {
+    position: absolute;
+    left: -125px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// positions
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
